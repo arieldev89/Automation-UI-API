@@ -23,8 +23,5 @@
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
         "api-test": "cucumber-js test/features/api -r test/step-definitions"
-    },
-    "dependencies": {
-        "axios": "^0.26.0"
     }
 }
