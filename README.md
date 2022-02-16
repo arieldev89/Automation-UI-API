@@ -12,3 +12,19 @@ Finally you can run the tests
 ```
 npx wdio run ./wdio.conf.js
 ```
+
+
+Install Allure report comand line tool
+```
+sudo npm install -g allure-commandline --save-dev
+```
+
+To generate report run
+```
+allure generate
+```
+
+To serve allure report run
+```
+allure serve
+```
