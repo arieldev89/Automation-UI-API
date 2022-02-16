@@ -1,11 +1,11 @@
 
 
-const Page = require('./page');
+const BasePage = require('./page');
 
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class AdminLogin extends Page {
+class AdminLogin extends BasePage {
     /**
      * define selectors using getter methods
      */
@@ -39,7 +39,7 @@ class AdminLogin extends Page {
      * overwrite specific options to adapt it to page object
      */
     open() {
-        return super.open('sign-in');
+        return super.open(`${'https://admin.devwyre.com/'}sign-in`);
     }
 }
 
