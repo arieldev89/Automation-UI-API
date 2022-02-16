@@ -1,5 +1,8 @@
 var supertest = require('supertest');
-const api = supertest('https://api.qawyre.com/v2');
+var config = require('./envHelper')
+
+console.log(`${config.api_base}`)
+const api = supertest(`${config.api_base}`);
 
 
 const send_post = async (endpoint, body) => {

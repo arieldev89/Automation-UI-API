@@ -32,3 +32,9 @@ To serve allure report run
 ```
 allure serve
 ```
+
+---
+Config 
+---
+
+Create .env file on root project, you can find .env_example with the required env variables needed for the application

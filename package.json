@@ -23,5 +23,8 @@
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
         "api-test": "cucumber-js test/features/api -r test/step-definitions"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.0"
     }
 }

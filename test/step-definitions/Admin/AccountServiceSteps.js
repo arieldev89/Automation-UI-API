@@ -7,8 +7,9 @@ const user = require("../../../src/wyre/api/User/UserService")
 let context = null;
 
 When(/^I create an account with valid data$/, async () => {
-    console.log(faker.internet.email())
-    const body = {"email": faker.internet.email(), "password": "wyreWYRE1234", "country": "US"}
+    const userEmail = faker.internet.email();
+    console.log(userEmail)
+    const body = {"email": userEmail, "password": "wyreWYRE1234", "country": "US"}
     context = await user.createUser(body);
     //console.log(context)
     console.log(context.body)
