@@ -1,11 +1,12 @@
 
 
-const Page = require('./page');
+const BasePage = require('./page');
+const config = require('../../../core/envHelper')
 
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class AdminLogin extends Page {
+class AdminLogin extends BasePage {
     /**
      * define selectors using getter methods
      */
@@ -39,7 +40,7 @@ class AdminLogin extends Page {
      * overwrite specific options to adapt it to page object
      */
     open() {
-        return super.open('sign-in');
+        return super.open(`${config.admin_url}sign-in`);
     }
 }
 
